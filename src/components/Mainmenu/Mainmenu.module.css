@@ -1,0 +1,41 @@
+.wrapper_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    margin-top: 100px;
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu input {
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #1e96eb;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.button:hover{
+    background-color: #1d86d1;
+}
+
+.button:active {
+    opacity: 0.5;
+}
