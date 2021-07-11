@@ -7,7 +7,7 @@ function Mainmenu({dispatch}) {
 
     const buttonNext = () => {
         if(value.length>0) {
-            dispatch({type: 'AUTH', payload: true})
+            dispatch({type: 'AUTH', payload: {auth: true, name: value}})
         }
     }
 

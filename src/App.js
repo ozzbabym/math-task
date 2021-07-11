@@ -7,14 +7,20 @@ import {reducer} from './reducer/reducer'
 
 function App() {
   const [state, dispatch] = React.useReducer(reducer, {
-    auth: false
+    auth: false,
+    examples: [],
+    result: [],
+    name: '',
+    answer: ''
   })
-  
 
+ React.useEffect(() => {
+   dispatch({type: 'ANSWER', payload: state.result})
+ }, [state.result])
   return (
     <div className="App">
         <Route path={'/'} render={() => <Mainmenu dispatch={dispatch}/>} exact/>
-        <Route path={'/example'} render={() => <Example state={state}/>} exact/>
+        <Route path={'/example'} render={() => <Example state={state} dispatch={dispatch}/>} exact/>
     </div>
   );
 }

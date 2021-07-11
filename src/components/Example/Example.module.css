@@ -1,0 +1,58 @@
+.wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+.exampleWrapper {
+    border: 1px solid black;
+    background-color: bisque;
+    height: 50px;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.example {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buttonNext {
+    background: chartreuse;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.buttonNext:hover {
+    background: yellowgreen;
+    transition: all 0.5s;
+}
+.buttonNext:active {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.good {
+    color: green;
+    font-weight: bold;
+}
+
+.defaultColor {
+    color: black
+}
